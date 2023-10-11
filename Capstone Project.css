@@ -1,0 +1,630 @@
+*
+{
+    box-sizing: border-box;
+}
+
+html
+{
+    -webkit-text-size-adjust: 100%;
+}
+
+body
+{
+    font-family: Roboto,"Helvetica Neue","Arial Nova","Nimbus Sans",Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: fit-content;
+}
+
+.top
+{
+    margin: 0 auto;
+    padding: 36px 28px 38px;
+    max-width: 1240px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+div.top ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex: 1 1 auto; /*grow,shrink,initial length*/
+}
+
+div.top ul li
+{
+    display: inline-block;
+    float: none;
+}
+
+#logo>a
+{
+    display: block;
+    width: 280px;
+    height: 36px;
+    background: url("images/ic-logo.png") no-repeat 0 0;
+    /* background-image: url(https://www.ti.com/etc/designs/ti/images/ui/ic-logo.svg); */
+    text-decoration: none;
+}
+
+#searchbar
+{
+    min-height: 36px;
+    padding: 0 0 0 3rem; /*0 0 0 48px(16px default*3)*/
+    max-width: 306px !important;
+    display: flex;
+}
+
+#searchbar form
+{
+    display: flex;
+    border: 1px solid lightslategray;
+} 
+
+#searchbar input[type=text]
+{
+    box-sizing: border-box;
+    flex: 1;
+    height: 34px;
+    border: none;
+    outline: none;
+    padding: 0 0 0 12px;
+    font-family: inherit;
+    font-size: 16px;
+    color: rgb(85, 85, 85);
+    line-height: 1.15;
+    margin-bottom: 0;
+    background-color: white;
+}
+
+#searchbar button
+{
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    outline: none;
+}
+
+.fa_custom
+{
+    color: lightslategray;
+}
+
+#searchbar button:hover
+{
+    background-color: lightgray;
+    border: none;
+}
+
+#login
+{
+    margin: 0 0 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+#login a:link, a:active, a:visited
+{
+    color: darkcyan;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+#login a:hover
+{
+    color: darkcyan;
+    text-decoration: underline;
+}
+
+#login span
+{
+    cursor: pointer;
+}
+
+#login span.divider
+{
+    padding: 0px 12px;
+    border: none;
+}
+
+.navi
+{
+    position: relative;
+    background: #cc0000;
+    height: 50px;
+}
+
+.navi ul
+{
+    margin:0 auto;
+    padding: 0 16px;
+    list-style: none;
+    width: 1240px;
+}
+
+.navi ul li
+{
+    display: inline-block;
+    overflow: hidden;
+}
+
+.navi ul li a 
+{
+    display: block;
+    padding: 0px 12px;
+    color:white;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 21px;
+}
+
+.navi ul li a:hover
+{
+    color: white;
+    background: red;
+}
+
+.page
+{
+    min-width: 1240px;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.space
+{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+.image
+{
+    position: relative;
+    overflow: hidden;
+    max-height: calc(48vh + 91px);
+    padding: 0;
+}
+
+.image img
+{
+    display: block;
+    width: 100%; 
+    height: auto;
+    max-width: 100%;
+}
+
+.image img[alt]
+{
+    position: relative;
+    min-width: 18px;
+    min-height: 18px;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    font-family: Roboto,"Helvetica Neue","Arial Nova","Nimbus Sans",Arial,sans-serif;
+}
+
+.topic
+{
+    padding: 2rem 6rem 0;
+    box-sizing: content-box;
+    position: relative;
+    margin: 0 44px;
+    margin-top: -91px;background: white;
+}
+ .topic h1
+ {
+    font-size: 34px;
+    font-family: Roboto,"Helvetica Neue","Arial Nova","Nimbus Sans",Arial,sans-serif;
+    font-weight: 400;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 24px;
+ }
+
+ h1::after 
+ {
+    content: "";
+    border-bottom: 1px solid #cc0000;
+    width: 3em;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+  }
+
+.pageContent
+{
+    margin: 0 44px;
+    padding: 0 6rem;
+    box-sizing: content-box;
+    display: flex;
+    align-items: flex-start;
+}
+
+.portal
+{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.portal>.content
+{
+    margin-left: 0;
+    padding: 0;
+    margin-right: 28px;
+    clear: both;
+}
+
+.row
+{
+    margin-left: -14px;
+    margin-right: -14px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.row::after 
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column
+{
+    float: left;
+    flex: 50%;
+    position: relative;
+    min-height: 1px;
+    padding: 0 14px;
+}
+
+.card
+{
+    box-shadow: 0 4px 8px 0 lightgray; /* this adds the "card" effect */
+    padding: 0;
+    text-align: left;
+    flex: 1 1 auto;
+    height: 100%;
+    background-color: white;
+}
+
+.cardContent
+{
+    padding: 20px 20px 40px 20px;
+    border: 1px solid lightslategray;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -1px;
+    height: 100%;
+}
+
+h3
+{
+    margin-bottom: 32px;
+    text-align: left;
+    font-weight: 300;
+    padding-top: calc(1.5rem - 1px);
+    padding: 0 1rem;
+    font-size: 24px;
+}
+
+.cardContent a
+{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 16px;
+    text-decoration: none;
+    color: #333333;
+}
+
+h3 a::after
+{
+    content: "";
+    border-bottom: 1px solid #cc0000;
+    width: 2em;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.describe
+{
+    flex: 1 1 auto;
+    padding: 0 1rem;
+}
+
+.describe p
+{
+    max-width: 100%;
+    margin-bottom: 24px;
+    line-height: 20px;
+    margin-top: 0;
+    padding: 0;
+}
+
+.box
+{
+    padding: 0.5rem 1rem 0 1rem;
+}
+
+.box a
+{
+    color: #cc0000;
+    padding: 5px 8px;
+    line-height: 20px;
+    min-height: 32px;
+    display: inline-flex;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid #cc0000;
+    border-radius: 2px;
+}
+
+.box a:hover
+{
+    color: white;
+    background-color: #cc0000;
+}
+
+footer
+{
+    width: 100%;
+    min-width: 1240px;
+    margin-top: 96px;
+    padding: 64px 0 16px;
+    background: linear-gradient(35deg,black 0, #333333 100%);
+    color: white;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.fcontent
+{
+    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.frow
+{
+    display: flex;
+    align-items: stretch;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+.fcol
+{
+    position: relative;
+    margin-bottom: 32px;
+    flex: 0 0 calc(25% - 28px);
+    box-sizing: border-box;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+.ftitle
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: lightgray;
+}
+
+.ftitle p
+{
+    margin: 0;
+}
+
+.flist
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.flist a
+{
+    color: white;
+    text-decoration: none;
+    flex: 0 0 auto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 16px;
+    max-width: 100%;
+}
+
+.fcontent a:hover
+{
+    text-decoration: underline;
+    color: white;
+}
+
+.flist-inline 
+{
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-start;
+}
+
+.flist-inline::before
+{
+    content: " ";
+    width: 100%;
+    order: 1;
+    height: 0px;
+}
+
+.flist-inline a
+{
+    margin-left: 0;
+    box-sizing: border-box;
+    margin: 0 64px 48px 0;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+hr
+{
+    display: block;
+    height: 0;
+    overflow: visible;
+    padding: 0;
+    margin: -1px 28px calc(48px - 1px);
+    border: 1px solid #333333;
+}
+
+.fcol-s1
+{
+    box-sizing: border-box;
+    margin-left: 14px;
+    margin-right: 14px;
+    flex-shrink: 0;
+    flex-basis: calc((33.33%) - (28px));
+    position: relative;
+    margin-bottom: 32px;
+}
+
+footer p
+{
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 400;
+    color: #aaa;
+}
+
+.fcol-s2
+{
+    box-sizing: border-box;
+    margin-left: 14px;
+    margin-right: 14px;
+    flex-shrink: 0;
+    flex-basis: calc((66.66%) - (28px));
+    position: relative;
+    margin-bottom: 32px;
+}
+
+
+.fcol-s3
+{
+    box-sizing: border-box;
+    margin-left: 14px;
+    margin-right: 14px;
+    flex-shrink: 0;
+    flex-basis: calc((99.99%) - (28px));
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.inlineLinks
+{
+    display: flex;
+}
+
+.change
+{
+    padding: 0 12px;
+    border-left: 1px solid #333333;
+}
+
+.copyRight a
+{
+    text-decoration: none;
+    color: white;
+    margin: 0;
+}
+
+#backTop button
+{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0 28px;
+    background:linear-gradient(45deg,rgb(22, 2, 2) 0, red 100%);
+    text-align: center;
+    border: none;
+    
+    transition: all 0.5s;
+}
+
+#backTop>button a
+{
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 900;
+}
+
+#backTop span
+{
+    position: relative;
+    display: inline-block;
+    color: whitesmoke;
+}
+
+#backTop span:after 
+{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#backTop>button a:hover span
+{
+    padding-right: 25px;
+}
+
+#backTop>button a:hover span::after
+{
+        opacity: 1;
+        right: 0;
+}
+
+@media (min-width:600px) {
+    header, .navi, .page, .footer, #backTop
+    {
+        width: 100%;
+    }
+}
+
+@media (min-width:2000px) {
+    header, .navi
+    {
+        font-size: large;
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
