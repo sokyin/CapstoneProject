@@ -51,7 +51,6 @@ div.top ul li
     width: 280px;
     height: 36px;
     background: url("images/ic-logo.png") no-repeat 0 0;
-    /* background-image: url(https://www.ti.com/etc/designs/ti/images/ui/ic-logo.svg); */
     text-decoration: none;
 }
 
@@ -77,7 +76,6 @@ div.top ul li
     border: none;
     outline: none;
     padding: 0 0 0 12px;
-    font-family: inherit;
     font-size: 16px;
     color: rgb(85, 85, 85);
     line-height: 1.15;
@@ -225,7 +223,8 @@ div.top ul li
     box-sizing: content-box;
     position: relative;
     margin: 0 44px;
-    margin-top: -91px;background: white;
+    margin-top: -91px;
+    background: white;
 }
  .topic h1
  {
@@ -571,8 +570,6 @@ footer p
     background:linear-gradient(45deg,rgb(22, 2, 2) 0, red 100%);
     text-align: center;
     border: none;
-    
-    transition: all 0.5s;
 }
 
 #backTop>button a
