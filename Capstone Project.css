@@ -590,25 +590,9 @@ footer p
     color: whitesmoke;
 }
 
-#backTop span:after 
-{
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-
 #backTop>button a:hover span
 {
     padding-right: 25px;
-}
-
-#backTop>button a:hover span::after
-{
-        opacity: 1;
-        right: 0;
 }
 
 @media (min-width:600px) {
@@ -618,13 +602,4 @@ footer p
     }
 }
 
-@media (min-width:2000px) {
-    header, .navi
-    {
-        font-size: large;
-        width: 100%;
-        max-width: 100%;
-    }
-
-}
 
