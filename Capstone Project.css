@@ -169,6 +169,11 @@ div.top ul li
     font-size: 21px;
 }
 
+.navi ul li a.small
+{
+    font-size: 14px;
+}
+
 .navi ul li a:hover
 {
     color: white;
@@ -219,10 +224,10 @@ div.top ul li
 
 .topic
 {
-    padding: 2rem 6rem 0;
+    padding: 2rem calc(6rem + 44px) 0;
     box-sizing: content-box;
     position: relative;
-    margin: 0 44px;
+    margin: 0 auto;
     margin-top: -91px;
     background: white;
 }
@@ -249,8 +254,8 @@ div.top ul li
 
 .pageContent
 {
-    margin: 0 44px;
-    padding: 0 6rem;
+    margin: 0 auto;
+    padding: 0 calc(6rem + 44px);
     box-sizing: content-box;
     display: flex;
     align-items: flex-start;
